@@ -18,6 +18,7 @@ WORKDIR /app/client
 COPY client/package*.json ./
 # Устанавливаем зависимости для клиента
 RUN npm install
+RUN npm run build
 # Копируем папку build из клиентской части
 COPY client/build ./build
 # Определяем порт, на котором будет работать приложение (только для информации)
