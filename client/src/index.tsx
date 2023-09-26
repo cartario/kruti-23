@@ -15,16 +15,24 @@ const router = createBrowserRouter([
       {
         path: 'child/:id',
         element: <Link to={`/`}>child</Link>
-      },      
+      },  
+      {
+        path: 'contacts',
+        element: <Link to={`/`}>Contacts</Link>
+      },       
     ]
+  }, 
+  {
+    path: '/play',
+    element: <Link to={`/`}>Play</Link>
+  }, 
+  {
+    path: '/offers',
+    element: <Link to={`/`}>Offers</Link>
   },
   {
-    path: '/test',
-    element: <a href={`/`}>Home</a>
-  },
-  {
-    path: '/users/:id',
-    element: <Link to={`/`}>Users</Link>
+    path: '/offer/:id',
+    element: <Link to={`/`}>OfferId</Link>
   }
 ])
 
